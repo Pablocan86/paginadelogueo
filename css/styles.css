@@ -5,11 +5,15 @@
 }
 body {
   width: 100%;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.body_loguin {
+  height: 100vh;
 }
 
 header {
@@ -20,10 +24,22 @@ header {
   align-items: center;
 }
 
+.header_logui {
+  height: 15vh;
+}
+
 h1 {
   font-size: 1.5rem;
 }
 
+.h1_ingreso {
+  margin-bottom: 10px;
+}
+
+.logo_shadow {
+  width: 200px;
+  height: 100px;
+}
 main {
   width: 100%;
   color: white;
@@ -34,6 +50,10 @@ main {
   padding-bottom: 60px;
 }
 
+.main_loguin {
+  height: 70vh;
+}
+
 .div_form {
   background-color: black;
   width: 300px;
@@ -42,16 +62,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: normal;
+  gap: 40px;
   text-align: center;
   padding: 40px;
+  border: 5px double rgb(120, 14, 14);
   border-radius: 5px;
-}
-
-.form_ingreso {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 40px;
 }
 
 .input_text {
@@ -59,6 +74,27 @@ main {
   font-size: 1rem;
   border: none;
   border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0px 0px 30px 10px rgb(120, 14, 14);
+}
+
+#boton_ingresar {
+  background-color: rgb(120, 14, 14);
+  border: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+#boton_ingresar:hover {
+  background-color: black;
+  cursor: pointer;
+  border: 1px solid rgb(120, 14, 14);
+  color: rgb(120, 14, 14);
 }
 section {
   background-color: black;
@@ -144,11 +180,11 @@ section article div p {
   margin-bottom: 5px;
 }
 
-footer {
+.footer_rutina {
   position: relative;
 }
 
-footer a {
+.footer_rutina a {
   text-decoration-line: none;
   display: flex;
   flex-direction: row;
@@ -172,4 +208,18 @@ footer a {
   padding-left: 5px;
   margin: 0px;
   border: none;
+}
+
+.footer_loguin {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 40px;
+}
+.icono_instagram {
+  width: 50px;
+  height: 50px;
 }
